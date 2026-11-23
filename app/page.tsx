@@ -3,7 +3,7 @@ import { cacheLife, cacheTag } from "next/cache";
 import { cookies } from "next/headers";
 import styles from "./page.module.css";
 
-// 全員に同じ内容。結果はキャッシュされ、shell に含まれる
+// 全員に同じ内容。結果はキャッシュされ、static shell に含まれる
 async function getItems() {
   "use cache";
   cacheLife("hours");
